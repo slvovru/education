@@ -1,0 +1,26 @@
+Создание нового проекта в intelliJ IDEA
+
+1. В IDE создаем Maven проект, указываем параметры.
+
+2. Подтверждаем автоимпорт в Maven.
+
+3. Убираем из видимости папку .idea: меню File -> Project Structure -> Modules -> Sources -> встать на .idea -> нажать Excluded, подтвердить, далее в настройках проекта в табе Project убрать галочку Show Excluded Files
+
+4. Добавляем в pom.xml раздел с зависимостями (junit):
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+    </dependencies>
+
+5. Прописываем необходимые для работы зависимости (можно и в процессе востребования)
+
+6. Прописываем структуру пакетов
+
+7. Подключаем GIT - VCS -> Подключить контроль версий -> GIT
+
+8. Пушим в github pom.xml, предварительно создав ветку в гитхабе.
